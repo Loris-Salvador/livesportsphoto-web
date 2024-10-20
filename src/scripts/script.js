@@ -35,7 +35,7 @@ let loadedImagesCount = 0;
 const checkImagesLoaded = () => {
     loadedImagesCount++;
     if (loadedImagesCount === images.length) {
-        document.body.style.display = 'block'; // Afficher le corps
+        document.body.style.display = 'block';
     }
 };
 
@@ -44,7 +44,7 @@ for (const img of images) {
         checkImagesLoaded();
     } else {
         img.addEventListener('load', checkImagesLoaded);
-        img.addEventListener('error', checkImagesLoaded); // Gérer les erreurs de chargement
+        img.addEventListener('error', checkImagesLoaded);
     }
 }
 

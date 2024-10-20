@@ -171,6 +171,18 @@ p {
         column-gap: 150px;
         row-gap: 100px;
 
+        .tennis-de-table {
+            background:
+                    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+                    url('../assets/photos/background-tennis-de-table.jpg') center / cover;
+        }
+
+        .handball {
+            background:
+                    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+                    url('../assets/photos/LSP.jpg') center / cover;
+        }
+
         .album {
             cursor: pointer;
             width: 350px;
@@ -181,10 +193,12 @@ p {
             align-items: center;
 
             p{
-                color: black;
+                font-size: 44px;
+                color: white;
                 font-weight: bold;
             }
         }
+
     }
 }
 

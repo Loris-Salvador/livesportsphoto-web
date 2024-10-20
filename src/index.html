@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.scss">
+    <link rel="icon" href="./assets/logos/lsp.png">
     <title>Live Sports Photo</title>
   </head>
   <body>
@@ -12,16 +13,16 @@
     <nav class="navbar">
       <ul>
         <li class="menu-container">
-          <div>A Propos</div>
+          <div id="about-menu">A Propos</div>
         </li>
         <li class="menu-container">
-          <div>Albums</div>
+          <div id="albums-menu">Albums</div>
         </li>
         <li class="menu-container">
-          <div>Services</div>
+          <div id="services-menu">Services</div>
         </li>
         <li class="menu-container">
-          <div>Contact</div>
+          <div id="contact-menu">Contact</div>
         </li>
 
         <li class="logo-container">
@@ -42,7 +43,7 @@
     <img class="background-photo" src="./assets/photos/background_photo.jpg" alt="Background photo">
 
     <div class="container about-container">
-      <h1>A propos de moi</h1>
+      <h1 id="about-section">A propos de moi</h1>
       <div class="main-container">
         <div class="left">
           <div class="content">
@@ -74,26 +75,26 @@
     </div>
 
 
-    <div class="container photos-container ">
+    <div class="container photos-container">
       <h1>Quelques clichés</h1>
       <div class="grid-photo">
         <div class="photo-item">
-          <img src="assets/photos/LSP.jpg" alt="" />
+          <img src="assets/photos/LSP.jpg" alt="photo1" />
         </div>
         <div class="photo-item">
-          <img src="assets/photos/LSP-1.jpg" alt="" />
+          <img src="assets/photos/LSP-1.jpg" alt="photo2" />
         </div>
         <div class="photo-item">
-          <img src="assets/photos/LSP-2.jpg" alt="" />
+          <img src="assets/photos/LSP-2.jpg" alt="photo3" />
         </div>
         <div class="photo-item">
-          <img src="assets/photos/LSP-3.jpg" alt="" />
+          <img src="assets/photos/LSP-3.jpg" alt="photo4" />
         </div>
       </div>
     </div>
 
 
-    <div class="container services-container">
+    <div class="container services-container" id="services-section">
       <h1>Services</h1>
       <p>
         Pack match : 75 photos minimum en version numérique + 3 photos TOP
@@ -109,13 +110,19 @@
       </p>
     </div>
 
+    <div class="container albums-container" id="albums-section">
+      <h1>Albums</h1>
+      <div class="grid-container">
+      </div>
+    </div>
 
-    <div class="container contact-container">
+
+    <div class="container contact-container" id="contact-section">
     <h1>Contact</h1>
     <div class="container content-container">
       <div class="whatsapp">
         <img src="assets/logos/whatsapp.png" alt="whatsapp-logo" />
-        <span>+32 (0)476 85 17 26</span>
+        <span>+32 (0) 476 85 17 26</span>
       </div>
       <div class="mail">
         <img src="assets/logos/mail.png" alt="mail-logo" />
@@ -125,7 +132,6 @@
     </div>
 
   </main>
-
-  <script type="module" src="./index.js"></script>
+  <script type="module" src="scripts/script.js"></script>
   </body>
 </html>

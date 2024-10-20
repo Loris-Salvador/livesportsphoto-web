@@ -160,6 +160,34 @@ p {
     }
 }
 
+//Albums
+
+.albums-container {
+
+    .grid-container {
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 150px;
+        row-gap: 100px;
+
+        .album {
+            cursor: pointer;
+            width: 350px;
+            height: 150px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 //Services
 
 .services-container {
@@ -211,4 +239,3 @@ p {
         }
     }
 }
-

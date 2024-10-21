@@ -65,5 +65,5 @@ handballAlbum.addEventListener('click', function() {
 });
 
 basketballAlbum.addEventListener('click', function() {
-    window.location.href = apiUrl+"/albums?id=basketball";
+    window.location.href = apiUrl+"/albums?id=Basketball";
 });

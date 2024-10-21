@@ -1,5 +1,4 @@
 const apiUrl = import.meta.env.VITE_API_URL;
-console.log(apiUrl);
 
 //Menu redirection
 
@@ -63,8 +62,3 @@ tennisDeTableAlbum.addEventListener('click', function() {
 handballAlbum.addEventListener('click', function() {
     window.location.href = apiUrl+"/albums?id=Handball";
 });
-
-
-
-
-

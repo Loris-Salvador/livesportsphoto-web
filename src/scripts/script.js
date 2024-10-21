@@ -1,3 +1,6 @@
+const apiUrl = import.meta.env.VITE_API_URL;
+console.log(apiUrl);
+
 //Menu redirection
 
 const aboutMenu = document.getElementById("about-menu");
@@ -48,9 +51,20 @@ for (const img of images) {
     }
 }
 
+//Albums
+
+const tennisDeTableAlbum = document.getElementById("tennis-de-table");
+const handballAlbum = document.getElementById("handball");
+
+tennisDeTableAlbum.addEventListener('click', function() {
+    window.location.href = apiUrl+"/albums?id=Tennis de table";
+});
+
+handballAlbum.addEventListener('click', function() {
+    window.location.href = apiUrl+"/albums?id=Handball";
+});
 
 
-const apiUrl = import.meta.env.VITE_API_URL;
 
-console.log(apiUrl);
+
 

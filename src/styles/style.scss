@@ -7,6 +7,35 @@ body {
     background-color: #333333;
 }
 
+//Style defined
+
+p, h1, h2, h3 {
+    color: white;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 32px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-top: 130px;
+    flex-direction: column;
+}
+
 //Navigation bar
 
 .navbar {
@@ -45,35 +74,6 @@ body {
             }
         }
     }
-}
-
-//Style defined
-
-p, h1, h2, h3 {
-    color: white;
-}
-
-h1 {
-    font-size: 72px;
-}
-
-h2 {
-    font-size: 48px;
-}
-
-h3 {
-    font-size: 40px;
-}
-
-p {
-    font-size: 32px;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    padding-top: 130px;
-    flex-direction: column;
 }
 
 //Main page
@@ -171,13 +171,13 @@ p {
         column-gap: 150px;
         row-gap: 100px;
 
-        .tennis-de-table {
+        #tennis-de-table {
             background:
                     linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
                     url('../assets/photos/background-tennis-de-table.jpg') center / cover;
         }
 
-        .handball {
+        #handball {
             background:
                     linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
                     url('../assets/photos/LSP.jpg') center / cover;

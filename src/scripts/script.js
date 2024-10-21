@@ -54,6 +54,7 @@ for (const img of images) {
 
 const tennisDeTableAlbum = document.getElementById("tennis-de-table");
 const handballAlbum = document.getElementById("handball");
+const basketballAlbum = document.getElementById("basketball");
 
 tennisDeTableAlbum.addEventListener('click', function() {
     window.location.href = apiUrl+"/albums?id=Tennis de table";
@@ -61,4 +62,8 @@ tennisDeTableAlbum.addEventListener('click', function() {
 
 handballAlbum.addEventListener('click', function() {
     window.location.href = apiUrl+"/albums?id=Handball";
+});
+
+basketballAlbum.addEventListener('click', function() {
+    window.location.href = apiUrl+"/albums?id=basketball";
 });

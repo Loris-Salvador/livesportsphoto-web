@@ -189,19 +189,25 @@ p {
         #tennis-de-table {
             background:
                     linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-                    url('../assets/photos/background-tennis-de-table.jpg') center / cover;
+                    url('../assets/photos/albums-background/background-tennis-de-table.jpg') center / cover;
         }
 
         #handball {
             background:
                     linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-                    url('../assets/photos/cliche-1.jpg') center / cover;
+                    url('../assets/photos/albums-background/background-handball.jpg') center / cover;
         }
 
         #basketball {
             background:
                     linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-                    url('../assets/photos/basketball-background.jpg') center / cover;
+                    url('../assets/photos/albums-background/background-basketball.jpg') center / cover;
+        }
+
+        #tennis {
+            background:
+                    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+                    url('../assets/photos/albums-background/background-tennis.jpg') center / cover;
         }
 
 

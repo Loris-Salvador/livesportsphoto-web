@@ -29,41 +29,32 @@ contactMenu.addEventListener('click', function() {
 });
 
 
-//Verifier toutes les images sont chargée
-
-const images = document.images; // Récupérer toutes les images
-let loadedImagesCount = 0;
-
-const checkImagesLoaded = () => {
-    loadedImagesCount++;
-    if (loadedImagesCount === images.length) {
-        document.body.style.display = 'block';
-    }
-};
-
-for (const img of images) {
-    if (img.complete) {
-        checkImagesLoaded();
-    } else {
-        img.addEventListener('load', checkImagesLoaded);
-        img.addEventListener('error', checkImagesLoaded);
-    }
-}
-
 //Albums
 
 const tennisDeTableAlbum = document.getElementById("tennis-de-table");
 const handballAlbum = document.getElementById("handball");
 const basketballAlbum = document.getElementById("basketball");
+const tennisAlbum = document.getElementById("tennis");
+
 
 tennisDeTableAlbum.addEventListener('click', function() {
-    window.location.href = apiUrl+"/albums?id=Tennis de table";
+    window.location.href = apiUrl + "/albums?id=Tennis de table";
 });
 
 handballAlbum.addEventListener('click', function() {
-    window.location.href = apiUrl+"/albums?id=Handball";
+    window.location.href = apiUrl + "/albums?id=Handball";
 });
 
 basketballAlbum.addEventListener('click', function() {
-    window.location.href = apiUrl+"/albums?id=Basketball";
+    window.location.href = apiUrl + "/albums?id=Basketball";
 });
+
+tennisAlbum.addEventListener('click', function() {
+    window.location.href = apiUrl + "/albums?id=Tennis";
+});
+
+
+//Requête pour gagner du temps réponse API
+
+const url = apiUrl + "/api/Section";
+fetch(url);

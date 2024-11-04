@@ -125,6 +125,7 @@ p {
             width: 50%;
 
             .content {
+                margin-top: 70px;
                 display: flex;
                 flex-direction: column;
                 padding-right: 150px;
@@ -266,4 +267,16 @@ p {
             }
         }
     }
+}
+
+
+footer {
+    width: 100%;
+
+    p {
+        text-align: center;
+        font-size: 16px;
+        color: #9f9c9c;
+    }
+
 }
